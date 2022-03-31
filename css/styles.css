@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Happy Times';
+    src: url('../fonts/happy-times-NG_regular_master_web.woff2') format('woff2'),
+    url('../fonts/happy-times-NG_regular_master_web.woff') format('woff'),
+    url('../fonts/happy-times-NG_regular_master_web.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Happy_Times_Italic';
+    src: url('../fonts/happy-times-NG_italic_master_web.woff2') format('woff2'),
+    url('../fonts/happy-times-NG_italic_master_web.woff') format('woff'),
+    url('../fonts/happy-times-NG_italic_master_web.ttf') format('truetype');
+}
+
+/* Global styles */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    overflow: hidden;
+}
+
+::selection {
+    background: #FFA8C6; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #FFA8C6; /* Gecko Browsers */
+}
+
+/* Typography */
+h2, p {
+    font-family: 'Happy Times';
+    line-height: 130%;
+}
+
+h2 {
+    font-size: 3.5vw;
+}
+
+p {
+    font-size: 18px;
+}
+
+li, .logo {
+    font-style: normal;
+}
+
+li {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    font-size: 15px;
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 500;
+}
+
+.dottedUnderline { 
+    border-bottom: 7px dotted; 
+}
+
+.italic {
+    font-family: 'Happy_Times_Italic';
+}
+
+/*************************************************/
+/* Nav Styles - mobile first */
+/* resource: https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535 */
+nav {
+    background: #FF75A4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    padding: 0 56px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    cursor: auto;
+}
+
+a {
+    color: #FFFF76;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+}
+
+.item {
+    padding: 4px 0 4px 0;
+}
+
+.item a:hover, .item a:hover::after {
+    color: white;
+}
+
+.menu li a {
+    display: block;
+    padding: 8px 0;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item {
+    order: 2;
+    width: 100%;
+    display: none;
+}
+
+/*************************************************/
+/* Main Section */
+#bio {
+    height: 100vh;
+    display: flex;
+	justify-content: center;
+    flex-direction: column;
+
+    padding: 0 56px;
+}
+
+#bio p {
+    max-width: 60vw;
+    margin-top: 16px;
+}
+
+.inline-link {
+    text-decoration: none;
+    color: black;
+}
+
+/*************************************************/
+/* Draggable images */
+img {
+    display: block;
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    max-width: 11vw;
+}
+
+.drag {
+    border: 1px solid black;
+}
+
+.bret {
+    top: 10%;
+    left: 26%;
+}
+
+.dog {
+    top: 30%;
+    left: 2%;
+}
+
+.micah {
+    top: 60%;
+    left: 34%;
+}
+
+.gabriel {
+    top: 10%;
+    left: 55%;
+}
+
+.lola {
+    top: 56%;
+    right: 23%;
+}
+
+.gina{
+    top: 25%;
+    right: 2%;
+}
+
+/*************************************************/
+/* Svgs */
+/* pngs */
+.svg {
+    position: absolute;
+}
+
+.star {
+    width: 4.6vw;
+    top: 72px;
+    left: -3%;
+    transform: rotate(16deg);
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+.smile {
+    width: 4.6vw;
+    bottom: 54px;
+    right: 3%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+.smile:hover, .star:hover {
+    -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+
+/*************************************************/
+/* Marquee */
+/* resource SuperHi Marquee effect from Advanced CSS & Javascript project 1 */
+.marquee-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF75A4;
+}
+
+.marquee {
+    font-family: roc-grotesk, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    padding: 8px 0;
+
+    white-space: nowrap;
+    animation: marquee 40s infinite linear;
+}
+
+.marquee a {
+    color: #FFFF76;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/*************************************************/
+/* Swiper */
+/* hide on desktop */
+.swiper {
+    display: none;
+}
+
+
+

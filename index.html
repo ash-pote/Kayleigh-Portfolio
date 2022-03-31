@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kayleigh Anne Kirsten</title>
+        <meta charset="UTF-8">
+        <meta content="initial-scale=1, maximum-scale=1" name="viewport">
+        <meta property="og:title" content="Kayleigh Anne Portfolio">
+        <!---- Links ---->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <!-- <link href="css/index.css" rel="stylesheet" type="text/css"> -->
+        <link href="css/mediaqueries.css" rel="stylesheet" type="text/css">
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+         <!---- Typography ---->
+        <link rel="stylesheet" href="https://use.typekit.net/ceq8lsh.css"> <!-- Roc Grotesk -->
+        <link href="css/all.css" rel="stylesheet" type="text/css"> 
+        <!-- Font Awesome -->
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="#">KAYLEIGH ANNE KIRSTEN</a></li>
+                    <li class="item email"><a  href="mailto:kaylighanne@icloud.com" >kaylighanne@icloud.com</a></li>
+                    <li class="item insta"><a  href="https://www.instagram.com/keeping.up.with.kayleigh/?hl=en" target="_blank">Instagram</a></li>
+                    <li class="toggle"><a href="#"><i class='fas fa-bars'></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside>
+                <img class="svg smile" src="img/noun_Smile_970558.svg" alt="star graphic"> 
+                <img class="svg star" src="img/star.svg" alt="star graphic">
+                
+                <!-- draggable images -->
+                <img class="drag bret" src="img/bret_portrait.jpg" alt="poloroid of person holding flowers">
+                <img class="drag dog" src="img/dog.jpg" alt="person dancing photograph">
+                <img class="drag micah" src="img/micah.jpg" alt="person wearing veil black and white photograph">
+                <img class="drag gabriel" src="img/gabriel.jpg" alt="couple naked black and white photograph">
+                <img class="drag lola" src="img/lola.jpg" alt="person pink sheet with short bob haircut photograph">
+                <img class="drag gina" src="img/gina.jpg" alt="person pink sheet with short bob haircut photograph">
+            </aside>
+
+            <!-- Slider main container -->
+            <section class="swiper-section">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="background-image:url(img/lola.jpg);" alt="portrait of woman with short black hair in bob style"></div>
+                    <div class="swiper-slide" style="background-image:url(img/bret_portrait.jpg);" alt="portrait of woman with short black hair in bob style"></div>
+                    <div class="swiper-slide" style="background-image:url(img/dog.jpg);" alt="portrait of woman with short black hair in bob style"></div>
+                    <div class="swiper-slide" style="background-image:url(img/gabriel.jpg);" alt="portrait of woman with short black hair in bob style"></div>
+                    <div class="swiper-slide" style="background-image:url(img/gina.jpg);" alt="portrait of woman with short black hair in bob style"></div>
+                    <div class="swiper-slide" style="background-image:url(img/micah.jpg);" alt="portrait of woman with short black hair in bob style"></div>
+    
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            
+
+            <section id="bio-section">
+                <div id="bio">
+                    <h2><span class="italic">Kayleigh Anne Kirsten</span> is a photographer focused on capturing Cape Towns alternative culture. She does this through her unique portaits and documentary work, predominantly using 35mm film for both her studio and events work. She aims to use her photography to capture her <span class="italic">local music, femme and queer community,</span> as well as combine her talent for <span class="italic">styling and concept</span> to create unique photoshoots.</h2>
+                    <p>Currently she is <span class="italic">seeking full time employment</span> but is always open to freelance work, personal shoots and events. If you’d like to schedule a meeting please <a href="mailto:kaylighanne@icloud.com" class="inline-link"><span class="italic">send her an email</span></a> or dm on <a href="https://www.instagram.com/keeping.up.with.kayleigh/?hl=en" target="_blank" class="inline-link"><span class="italic">Instagram</span></a>. </p>
+                </div>
+            </section>
+        </main>
+
+        <div class="marquee-container">
+            <div class="marquee">
+                <a href="https://www.instagram.com/keeping.up.with.kayleigh/?hl=en" target="_blank">@keeping.up.with.kayleigh</a>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> <!---- GSAP ---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/Draggable.min.js"></script> <!---- GSAP Draggable---->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> <!---- Swiper---->
+
+    <!-- <script src="js/swiper.js"></script> -->
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</html>

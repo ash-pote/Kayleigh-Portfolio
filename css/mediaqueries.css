@@ -1,0 +1,308 @@
+/* Biggest Desktop */
+/* everything above 1750px */
+@media all and (min-width: 2100px) {
+    /* Typography */
+    p {
+    font-size: 24px;
+    }
+
+    .item a, .logo {
+        font-size: 24px;
+    }
+
+    .marquee-text a {
+        font-size: 21px;
+    }
+}
+
+/* Big Desktop */
+/* everything below 1750px */
+@media all and (max-width: 2100px) {
+    /* Typography */
+    p {
+    font-size: 21px;
+    }
+
+    .item a, .logo {
+        font-size: 18px;
+    }
+
+    .marquee-text a {
+        font-size: 14px;
+    }
+}
+
+/* Medium Desktop */
+/* everything below 1750px */
+@media all and (max-width: 1800px) {
+    /* Typography */
+    p {
+    font-size: 18px;
+    }
+
+    .item a, .logo {
+        font-size: 16px;
+    }
+
+    .marquee-text a {
+        font-size: 14px;
+    }
+}
+
+/* Small Desktop */
+/* everything below 1366px */
+@media all and (max-width: 1366px) {
+    /* Typography */
+    h2 {
+        line-height: 140%;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .item a, .logo {
+        font-size: 16px;
+    }
+
+    .marquee-text a {
+        font-size: 14px;
+    }
+
+    .dottedUnderline { 
+        border-bottom: 5px dotted; 
+    }
+
+    /* Main Section */
+    #bio {
+        padding: 0 40px;
+    }
+}
+
+
+/* Tablet Media Query */
+/* everything above 700px */
+@media all and (min-width: 1025px) {
+    /* nav */
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .item {
+        padding: 24px 0 24px 0;
+    }
+
+    .item a:hover, .item a:hover::after, .inline-link:hover {
+        color: #ccc;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+
+    nav {
+        background: transparent;
+    }
+
+    .insta {
+        padding-left: 40px;
+    }
+
+    .logo a, a {
+        color: black;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 0;
+    }
+}
+
+/* Tablet Media Query */
+/* everything below 900px */
+@media all and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+        overflow: unset;
+    }
+    /* Typography */
+    h2 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    /* nav */
+    nav {
+        padding: 0 24px;
+    }
+
+    /* mobile menu */
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 8px 0;
+    }
+
+    .toggle {
+        order: 1;
+        font-size: 20px;
+    }
+
+    .item {
+        order: 2;
+        width: 100%;
+        display: none;
+    }
+
+    .active .item {
+        display: block;
+    }
+
+    #burger i {
+        color: #FFFF76" 
+    }
+
+    /* Draggable images */
+    .drag {
+        display: none;
+    }
+
+    /* main */
+    #bio p {
+        max-width: 100%;
+        margin-top: 16px;
+    }
+
+    #bio {
+        display: contents;
+    }
+
+    #bio-section {
+        margin-top: 24px;
+    }
+
+    main {
+        margin: 62px 24px 40px 24px; /* margin top nav height */
+    }
+
+    .svg {
+        display: none;
+    }
+
+    /* marquee */
+    .marquee {
+        position: relative;
+    }
+
+    /* swiper */
+    /* show on mobile */
+    .swiper-section {
+        margin-top: 16px;
+    }
+    .swiper {
+        display: block;
+
+        height: 84vh;
+        width: 100%;
+        
+        background-color: #FF75A4;
+    } 
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* .swiper-pagination > .swiper-pagination-bullet {
+        opacity: 1;
+        border: #FF75A4 1px;
+        background-color: white;
+    }
+    .swiper-pagination > .swiper-pagination-bullet-active {
+        background-color: #FF75A4;
+    } */
+}
+
+/* Mobile Media Query */
+@media all and (max-width: 699px) {
+    /* Typography */
+    h2 {
+        line-height: 145%;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .dottedUnderline { 
+        border-bottom: 4px dotted; 
+    }
+
+    /* main */
+    main {
+        margin: 62px 24px 24px 24px;
+    }
+    
+    nav {
+        padding: 0 24px;
+    }
+}
+
+/* Mobile Media Query */
+@media all and (max-width: 500px) {
+    h2 {
+        font-size: 5vw;
+    }
+
+    main {
+        margin: 60px 16px 24px 16px;
+    }
+
+    nav {
+        padding: 0 16px;
+    }
+
+    .swiper {
+        height: 64vh;
+    }
+}
+
+/* Mobile Media Query */
+@media all and (max-width: 350px) {
+    .item a, .logo, .marquee-text a {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+}
+
+/* mobile landscape */
+/* Tablet Media Query */
+/* everything below 900px */
+@media all and (max-width: 1024px) and (orientation: landscape) {
+    .swiper {
+        height: 180vh;
+    }
+}
